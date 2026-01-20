@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stream unlimited movies, TV shows, and more. Watch anywhere. Cancel anytime.">
+    <title>StreamFlix - Watch Movies & TV Shows Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>StreamFlix</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#series" class="nav-link">TV Shows</a></li>
+                <li><a href="#movies" class="nav-link">Movies</a></li>
+                <li><a href="#new" class="nav-link">New & Popular</a></li>
+                <li><a href="#mylist" class="nav-link">My List</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="notification-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                </button>
+                <div class="profile-btn">
+                    <img src="https://i.pravatar.cc/40" alt="Profile">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2 class="hero-title">The Last Kingdom</h2>
+                <p class="hero-description">
+                    As Alfred the Great defends his kingdom from Norse invaders, Uhtred - born a Saxon but raised by
+                    Vikings - seeks to claim his ancestral birthright.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                        Play
+                    </button>
+                    <button class="btn btn-secondary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 16v-4M12 8h.01"></path>
+                        </svg>
+                        More Info
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- Content Sections -->
+    <main class="content">
+        <!-- Trending Now -->
+        <section class="content-row">
+            <h3 class="row-title">Trending Now</h3>
+            <div class="row-slider">
+                <div class="movie-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="card-overlay">
+                            <button class="play-btn">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4>Stranger Things</h4>
+                        <div class="card-meta">
+                            <span class="match">98% Match</span>
+                            <span class="rating">TV-14</span>
+                            <span class="seasons">4 Seasons</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="card-overlay">
+                            <button class="play-btn">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4>The Witcher</h4>
+                        <div class="card-meta">
+                            <span class="match">95% Match</span>
+                            <span class="rating">TV-MA</span>
+                            <span class="seasons">3 Seasons</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="card-overlay">
+                            <button class="play-btn">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4>Breaking Bad</h4>
+                        <div class="card-meta">
+                            <span class="match">99% Match</span>
+                            <span class="rating">TV-MA</span>
+                            <span class="seasons">5 Seasons</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <div class="card-overlay">
+                            <button class="play-btn">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4>Wednesday</h4>
+                        <div class="card-meta">
+                            <span class="match">92% Match</span>
+                            <span class="rating">TV-14</span>
+                            <span class="seasons">1 Season</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                        <div class="card-overlay">
+                            <button class="play-btn">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4>Dark</h4>
+                        <div class="card-meta">
+                            <span class="match">96% Match</span>
+                            <span class="rating">TV-MA</span>
+                            <span class="seasons">3 Seasons</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular on StreamFlix -->
+        <section class="content-row">
+            <h3 class="row-title">Popular on StreamFlix</h3>
+            <div class="row-slider">
+                <div class="movie-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <div class="card-overlay">
+                            <button class="play-btn">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4>Money Heist</h4>
+                        <div class="card-meta">
+                            <span class="match">94% Match</span>
+                            <span class="rating">TV-MA</span>
+                            <span class="seasons">5 Seasons</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                        <div class="card-overlay">
+                            <button class="play-btn">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4>Bridgerton</h4>
+                        <div class="card-meta">
+                            <span class="match">91% Match</span>
+                            <span class="rating">TV-MA</span>
+                            <span class="seasons">2 Seasons</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                        <div class="card-overlay">
+                            <button class="play-btn">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4>The Crown</h4>
+                        <div class="card-meta">
+                            <span class="match">97% Match</span>
+                            <span class="rating">TV-MA</span>
+                            <span class="seasons">6 Seasons</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%);">
+                        <div class="card-overlay">
+                            <button class="play-btn">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4>Squid Game</h4>
+                        <div class="card-meta">
+                            <span class="match">93% Match</span>
+                            <span class="rating">TV-MA</span>
+                            <span class="seasons">1 Season</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);">
+                        <div class="card-overlay">
+                            <button class="play-btn">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4>Ozark</h4>
+                        <div class="card-meta">
+                            <span class="match">96% Match</span>
+                            <span class="rating">TV-MA</span>
+                            <span class="seasons">4 Seasons</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Releases -->
+        <section class="content-row">
+            <h3 class="row-title">New Releases</h3>
+            <div class="row-slider">
+                <div class="movie-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #fddb92 0%, #d1fdff 100%);">
+                        <div class="card-overlay">
+                            <button class="play-btn">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4>The Night Agent</h4>
+                        <div class="card-meta">
+                            <span class="match">89% Match</span>
+                            <span class="rating">TV-MA</span>
+                            <span class="seasons">1 Season</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #96fbc4 0%, #f9f586 100%);">
+                        <div class="card-overlay">
+                            <button class="play-btn">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4>You</h4>
+                        <div class="card-meta">
+                            <span class="match">90% Match</span>
+                            <span class="rating">TV-MA</span>
+                            <span class="seasons">4 Seasons</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);">
+                        <div class="card-overlay">
+                            <button class="play-btn">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4>1899</h4>
+                        <div class="card-meta">
+                            <span class="match">88% Match</span>
+                            <span class="rating">TV-MA</span>
+                            <span class="seasons">1 Season</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);">
+                        <div class="card-overlay">
+                            <button class="play-btn">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4>Kaleidoscope</h4>
+                        <div class="card-meta">
+                            <span class="match">85% Match</span>
+                            <span class="rating">TV-MA</span>
+                            <span class="seasons">1 Season</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);">
+                        <div class="card-overlay">
+                            <button class="play-btn">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h4>The Recruit</h4>
+                        <div class="card-meta">
+                            <span class="match">87% Match</span>
+                            <span class="rating">TV-MA</span>
+                            <span class="seasons">1 Season</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <div class="footer-column">
+                    <a href="#">FAQ</a>
+                    <a href="#">Investor Relations</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Speed Test</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#">Help Center</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Cookie Preferences</a>
+                    <a href="#">Legal Notices</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#">Account</a>
+                    <a href="#">Ways to Watch</a>
+                    <a href="#">Corporate Information</a>
+                    <a href="#">Only on StreamFlix</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#">Media Center</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+            <p class="footer-copy">&copy; 2026 StreamFlix, Inc.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
